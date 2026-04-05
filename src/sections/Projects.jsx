@@ -9,7 +9,7 @@ function Projects() {
       tech: ["React", "Spring Boot", "MySQL"],
       github: "#",
       demo: "#",
-      image: "EMS view logo.png",
+      image: "/emsview.png",
     },
     {
       title: "Portfolio Website",
@@ -17,7 +17,7 @@ function Projects() {
       tech: ["React", "Tailwind"],
       github: "#",
       demo: "#",
-      image: "AK view logo.png",
+      image: " /akview.png",
     },
   ];
 
