@@ -40,7 +40,7 @@ function Hero() {
           >
             <span className="text-white">Ari </span>
             <span className="text-red-500 drop-shadow-[0_0_10px_rgba(239,68,68,0.6)]">
-              Karan
+              K
             </span>
           </motion.div>
 
