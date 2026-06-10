@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react';
 import ErrorBoundary from './components/ErrorBoundary';
+import BackgroundEffects from './components/BackgroundEffects';
 import Navbar from './components/Navbar';
 
 // Lazy load components for better initial load performance
@@ -26,10 +27,11 @@ const LoadingFallback = () => (
 function App() {
   return (
     <ErrorBoundary>
-      <div className="bg-black text-white min-h-screen">
+      <div className="relative bg-black text-white min-h-screen overflow-hidden">
+        <BackgroundEffects />
         <Navbar />
 
-        <main role="main">
+        <main id="main" role="main" className="relative z-10">
           <Suspense fallback={<LoadingFallback />}>
             <Hero />
           </Suspense>

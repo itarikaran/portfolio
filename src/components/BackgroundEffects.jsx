@@ -1,18 +1,18 @@
 function BackgroundEffects() {
   return (
-    <div className="fixed inset-0 -z-10 overflow-hidden">
+    <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
 
       {/* Main Red Glow */}
       <div
         className="
         absolute
-        top-[-150px]
-        left-[15%]
-        w-[700px]
-        h-[700px]
-        bg-red-600/15
+        top-[-180px]
+        left-[8%]
+        w-[760px]
+        h-[760px]
+        bg-red-600/10
         rounded-full
-        blur-[220px]
+        blur-[260px]
         animate-pulse
       "
       />
@@ -21,13 +21,13 @@ function BackgroundEffects() {
       <div
         className="
         absolute
-        bottom-[-200px]
-        right-[10%]
-        w-[600px]
-        h-[600px]
-        bg-orange-500/10
+        bottom-[-220px]
+        right-[6%]
+        w-[680px]
+        h-[680px]
+        bg-orange-500/8
         rounded-full
-        blur-[220px]
+        blur-[260px]
         animate-pulse
       "
       />
@@ -40,9 +40,9 @@ function BackgroundEffects() {
         left-1/2
         -translate-x-1/2
         -translate-y-1/2
-        w-[400px]
-        h-[400px]
-        bg-red-500/5
+        w-[460px]
+        h-[460px]
+        bg-red-500/4
         rounded-full
         blur-[180px]
       "

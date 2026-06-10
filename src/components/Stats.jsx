@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import SectionHeading from "./SectionHeading";
 
 function Stats() {
   const stats = [
@@ -25,14 +26,20 @@ function Stats() {
   ];
 
   return (
-    <section className="py-12" role="region" aria-label="Technology statistics">
+    <section className="py-24 lg:py-28" role="region" aria-label="Technology statistics">
       <div className="max-w-6xl mx-auto px-6">
+        <SectionHeading
+          eyebrow="Core Stack"
+          title="The technologies that define my day-to-day work."
+          description="A concise look at the tools and platforms I lean on when building full-stack applications."
+        />
+
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6" role="list">
           {stats.map((item) => (
             <motion.article
               key={item.id}
-              whileHover={{ y: -5 }}
-              className="bg-zinc-900/80 backdrop-blur-md border border-zinc-800 rounded-2xl p-6 text-center focus:outline-none focus:ring-2 focus:ring-red-500"
+              whileHover={{ y: -6 }}
+              className="rounded-[1.75rem] border border-white/8 bg-white/[0.03] p-6 text-center backdrop-blur-xl shadow-2xl shadow-black/10 focus:outline-none focus:ring-2 focus:ring-red-500"
               role="listitem"
               tabIndex="0"
             >

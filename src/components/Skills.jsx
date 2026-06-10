@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import SectionHeading from "./SectionHeading";
 
 const categories = [
   {
@@ -21,34 +22,27 @@ const categories = [
 
 function Skills() {
   return (
-    <section id="skills" className="py-20" role="region" aria-labelledby="skills-heading">
+    <section id="skills" className="py-24 lg:py-28" role="region" aria-labelledby="skills-heading">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 id="skills-heading" className="text-4xl font-bold text-red-500 mb-3">
-          Skills
-        </h2>
+        <SectionHeading
+          eyebrow="Capabilities"
+          title="A practical stack for building full product flows."
+          description="Technologies I use to build modern full-stack applications with emphasis on reliability, speed, and maintainable code."
+          id="skills-heading"
+        />
 
-        <p className="text-zinc-500 mb-10">
-          Technologies I use to build modern full-stack applications.
-        </p>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
           {categories.map((item) => (
             <motion.div
               key={item.title}
-              whileHover={{ y: -5 }}
-              className="
-                bg-zinc-900/80
-                backdrop-blur-md
-                border border-zinc-800
-                rounded-2xl
-                p-6
-                hover:border-red-500/30
-                transition-all duration-300
-              "
+              whileHover={{ y: -8 }}
+              className="group rounded-[1.75rem] border border-white/8 bg-white/[0.03] p-6 backdrop-blur-xl transition-all duration-300 hover:border-red-500/30 hover:bg-white/[0.05] hover:shadow-2xl hover:shadow-red-950/10"
               role="region"
               aria-labelledby={`skills-${item.title.toLowerCase()}`}
             >
-              <h3 id={`skills-${item.title.toLowerCase()}`} className="font-bold text-xl mb-5">
+              <div className="mb-5 h-1 w-12 rounded-full bg-gradient-to-r from-red-500 to-orange-400" />
+
+              <h3 id={`skills-${item.title.toLowerCase()}`} className="font-bold text-xl mb-5 text-white">
                 {item.title}
               </h3>
 
@@ -56,15 +50,7 @@ function Skills() {
                 {item.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="
-                      px-3 py-1
-                      rounded-full
-                      bg-red-500/10
-                      border border-red-500/20
-                      text-red-400
-                      text-sm
-                      focus:outline-none focus:ring-2 focus:ring-red-500
-                    "
+                    className="rounded-full border border-white/8 bg-black/35 px-3 py-1 text-sm text-zinc-200 focus:outline-none focus:ring-2 focus:ring-red-500"
                     tabIndex="0"
                     role="status"
                     aria-label={`${skill} skill`}

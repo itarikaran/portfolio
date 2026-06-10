@@ -16,11 +16,11 @@ function Navbar() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-black/70 backdrop-blur-lg border-b border-zinc-900" aria-label="Main navigation">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-black/55 backdrop-blur-2xl border-b border-white/5" aria-label="Main navigation">
       {/* Skip to main content link */}
       <a
         href="#main"
-        className="absolute -top-12 left-0 bg-red-600 px-4 py-2 text-white focus:top-0 z-10 transition-all"
+        className="absolute -top-12 left-4 bg-red-600 px-4 py-2 text-white focus:top-4 z-10 transition-all rounded-full"
       >
         Skip to main content
       </a>
@@ -29,7 +29,7 @@ function Navbar() {
         {/* Logo */}
         <a
           href="#hero"
-          className="text-2xl font-bold hover:text-red-500 transition focus:outline-none focus:ring-2 focus:ring-red-500 rounded px-2 py-1"
+          className="text-2xl font-bold hover:text-red-500 transition focus:outline-none focus:ring-2 focus:ring-red-500 rounded-full px-3 py-1"
           aria-label="Ari Karan - Home"
         >
           Ari <span className="text-red-500">Karan</span>
@@ -41,7 +41,7 @@ function Navbar() {
             <li key={label}>
               <a
                 href={href}
-                className="text-zinc-400 hover:text-red-500 transition focus:outline-none focus:ring-2 focus:ring-red-500 rounded px-2 py-1"
+                className="text-zinc-400 hover:text-white transition focus:outline-none focus:ring-2 focus:ring-red-500 rounded-full px-3 py-1"
               >
                 {label}
               </a>
@@ -52,7 +52,7 @@ function Navbar() {
             href="/resume.pdf"
             target="_blank"
             rel="noreferrer"
-            className="bg-red-600 hover:bg-red-700 px-5 py-2 rounded-lg transition focus:outline-none focus:ring-2 focus:ring-red-500"
+            className="bg-white text-black hover:bg-zinc-200 px-5 py-2 rounded-full transition focus:outline-none focus:ring-2 focus:ring-red-500"
             aria-label="Download resume (opens in new window)"
           >
             Resume
@@ -61,7 +61,7 @@ function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-2xl p-2 hover:text-red-500 transition focus:outline-none focus:ring-2 focus:ring-red-500 rounded"
+          className="md:hidden text-2xl p-2 hover:text-red-500 transition focus:outline-none focus:ring-2 focus:ring-red-500 rounded-full"
           onClick={() => setIsOpen(!isOpen)}
           aria-expanded={isOpen}
           aria-controls="mobile-menu"
@@ -75,7 +75,7 @@ function Navbar() {
       {isOpen && (
         <div 
           id="mobile-menu"
-          className="md:hidden bg-zinc-950 border-t border-zinc-800"
+          className="md:hidden bg-zinc-950/95 border-t border-white/5"
           role="region"
           aria-label="Mobile navigation menu"
         >
@@ -85,7 +85,7 @@ function Navbar() {
                 <a
                   href={href}
                   onClick={closeMenu}
-                  className="text-zinc-300 hover:text-red-500 transition focus:outline-none focus:ring-2 focus:ring-red-500 rounded px-2 py-1 block"
+                  className="text-zinc-300 hover:text-white transition focus:outline-none focus:ring-2 focus:ring-red-500 rounded-full px-3 py-2 block"
                 >
                   {label}
                 </a>
@@ -97,7 +97,7 @@ function Navbar() {
               target="_blank"
               rel="noreferrer"
               onClick={closeMenu}
-              className="bg-red-600 hover:bg-red-700 px-5 py-3 rounded-lg text-center transition focus:outline-none focus:ring-2 focus:ring-red-500"
+              className="bg-white text-black hover:bg-zinc-200 px-5 py-3 rounded-full text-center transition focus:outline-none focus:ring-2 focus:ring-red-500"
               aria-label="Download resume (opens in new window)"
             >
               Resume
