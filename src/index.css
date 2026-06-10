@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  background: #000000;
 }
 
 body {
@@ -11,6 +12,11 @@ body {
   color: #ffffff;
   overflow-x: hidden;
   font-family: Inter, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  background: #000000;
 }
 
 ::-webkit-scrollbar {
