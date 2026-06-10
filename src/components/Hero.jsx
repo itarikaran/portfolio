@@ -27,13 +27,40 @@ function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
+          
+          <div className="
+            inline-flex
+            items-center
+            gap-2
+            px-4
+            py-2
+            rounded-full
+            border
+            border-red-500/30
+            bg-red-500/10
+            text-red-400
+            text-sm
+            mb-6
+            ">
+              ● Available for Internships & Full-Time Roles
+          </div>
+
           <p className="text-red-500 font-semibold mb-3">
             JAVA FULL-STACK DEVELOPER
           </p>
 
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-            Ari
-            <span className="text-red-500"> Karan</span>
+          <h1 className="
+            text-6xl
+            md:text-8xl
+            font-black
+            bg-gradient-to-r
+            from-white
+            via-red-400
+            to-red-600
+            bg-clip-text
+            text-transparent
+            ">
+            Ari Karan
           </h1>
 
           <p className="mt-6 text-zinc-400 text-lg leading-relaxed max-w-xl">
