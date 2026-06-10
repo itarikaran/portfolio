@@ -1,9 +1,8 @@
 function About() {
   return (
-    <section id="about" className="py-24">
+    <section id="about" className="py-24" role="region" aria-labelledby="about-heading">
       <div className="max-w-6xl mx-auto px-6">
-
-        <h2 className="text-4xl font-bold mb-8 text-red-500">
+        <h2 id="about-heading" className="text-4xl font-bold mb-8 text-red-500">
           About Me
         </h2>
 
@@ -13,7 +12,6 @@ function About() {
           Strong interest in backend development, REST APIs
           and scalable software solutions.
         </p>
-
       </div>
     </section>
   );

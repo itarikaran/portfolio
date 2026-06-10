@@ -7,19 +7,25 @@ html {
 }
 
 body {
-  background-color: #050505;
+  background: #000000;
+  color: #ffffff;
   overflow-x: hidden;
+  font-family: Inter, sans-serif;
+}
 
-  background-image:
-    linear-gradient(
-      rgba(255,255,255,0.02) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      90deg,
-      rgba(255,255,255,0.02) 1px,
-      transparent 1px
-    );
+::-webkit-scrollbar {
+  width: 8px;
+}
 
-  background-size: 50px 50px;
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dc2626;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ef4444;
 }

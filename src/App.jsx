@@ -1,51 +1,85 @@
-import BackgroundEffects from "./components/BackgroundEffects";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Stats from "./components/Stats";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Learning from "./components/Learning";
-import Projects from "./components/Projects";
-import Experience from "./components/Experience";
-import Education from "./components/Education";
-import Certifications from "./components/Certifications";
-import Profiles from "./components/Profiles";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import { lazy, Suspense } from 'react';
+import ErrorBoundary from './components/ErrorBoundary';
+import Navbar from './components/Navbar';
+
+// Lazy load components for better initial load performance
+const Hero = lazy(() => import('./components/Hero'));
+const Stats = lazy(() => import('./components/Stats'));
+const About = lazy(() => import('./components/About'));
+const Skills = lazy(() => import('./components/Skills'));
+const Learning = lazy(() => import('./components/Learning'));
+const Projects = lazy(() => import('./components/Projects'));
+const Experience = lazy(() => import('./components/Experience'));
+const Education = lazy(() => import('./components/Education'));
+const Certifications = lazy(() => import('./components/Certifications'));
+const Profiles = lazy(() => import('./components/Profiles'));
+const Contact = lazy(() => import('./components/Contact'));
+const Footer = lazy(() => import('./components/Footer'));
+
+// Loading placeholder
+const LoadingFallback = () => (
+  <div className="min-h-screen flex items-center justify-center">
+    <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-red-500"></div>
+  </div>
+);
 
 function App() {
   return (
-    <div className="bg-black text-white min-h-screen">
+    <ErrorBoundary>
+      <div className="bg-black text-white min-h-screen">
+        <Navbar />
 
-      <BackgroundEffects />
+        <main role="main">
+          <Suspense fallback={<LoadingFallback />}>
+            <Hero />
+          </Suspense>
 
-      <Navbar />
+          <Suspense fallback={<LoadingFallback />}>
+            <Stats />
+          </Suspense>
 
-      <Hero />
+          <Suspense fallback={<LoadingFallback />}>
+            <About />
+          </Suspense>
 
-      <Stats />
+          <Suspense fallback={<LoadingFallback />}>
+            <Skills />
+          </Suspense>
 
-      <About />
+          <Suspense fallback={<LoadingFallback />}>
+            <Learning />
+          </Suspense>
 
-      <Skills />
+          <Suspense fallback={<LoadingFallback />}>
+            <Projects />
+          </Suspense>
 
-      <Learning />
+          <Suspense fallback={<LoadingFallback />}>
+            <Experience />
+          </Suspense>
 
-      <Projects />
+          <Suspense fallback={<LoadingFallback />}>
+            <Education />
+          </Suspense>
 
-      <Experience />
+          <Suspense fallback={<LoadingFallback />}>
+            <Certifications />
+          </Suspense>
 
-      <Education />
+          <Suspense fallback={<LoadingFallback />}>
+            <Profiles />
+          </Suspense>
 
-      <Certifications />
+          <Suspense fallback={<LoadingFallback />}>
+            <Contact />
+          </Suspense>
+        </main>
 
-      <Profiles />
-
-      <Contact />
-
-      <Footer />
-
-    </div>
+        <Suspense fallback={null}>
+          <Footer />
+        </Suspense>
+      </div>
+    </ErrorBoundary>
   );
 }
 
