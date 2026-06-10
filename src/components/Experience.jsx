@@ -23,7 +23,7 @@ function Experience() {
           <div aria-hidden="true" className="absolute left-0 top-10 h-[calc(100%-5rem)] w-px bg-gradient-to-b from-red-500 to-transparent"></div>
           <div aria-hidden="true" className="absolute left-[0px] top-10 h-5 w-5 -translate-x-1/2 rounded-full bg-red-500 shadow-[0_0_20px_rgba(239,68,68,0.6)]"></div>
 
-          <p className="text-xs uppercase tracking-[0.35em] text-red-400 font-semibold mb-4">Current role</p>
+          <p className="text-xs uppercase tracking-[0.35em] text-red-400 font-semibold mb-4">role</p>
 
           <h3 className="text-2xl font-semibold text-white">
             Java Full-Stack Intern
