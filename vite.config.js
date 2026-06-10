@@ -5,30 +5,23 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    // Optimize build size and performance
-    target: 'ES2020',
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true, // Remove console logs in production
-      },
-    },
-    // Code splitting for better caching
+    target: 'es2019',
     rollupOptions: {
       output: {
-        manualChunks: {
-          'vendor': ['react', 'react-dom'],
-          'animations': ['framer-motion'],
-          'icons': ['react-icons'],
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('react-icons')) return 'icons';
+            if (id.includes('framer-motion')) return 'animations';
+            if (id.includes('react')) return 'vendor';
+          }
+
+          return undefined;
         },
       },
     },
-    // Performance hints
     reportCompressedSize: false,
   },
-  // Environment variable prefix
   envPrefix: 'VITE_',
-  // Optimization
   optimizeDeps: {
     include: ['react', 'react-dom', 'framer-motion', 'react-icons'],
   },
