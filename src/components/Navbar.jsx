@@ -93,7 +93,7 @@ function Navbar() {
             ))}
 
             <a
-              href="/resume.pdf"
+              href="./resume.pdf"
               target="_blank"
               rel="noreferrer"
               onClick={closeMenu}
