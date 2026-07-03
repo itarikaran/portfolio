@@ -35,7 +35,7 @@ export default function Contact() {
           description="Direct contact details and a polished no-backend form for quick outreach."
         />
 
-        <div className="mt-12 grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+        <div className="mt-12 grid gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
           <div className="grid gap-4 sm:grid-cols-2">
             {contactInfo.map((item) => {
               const iconMap = {
@@ -64,20 +64,28 @@ export default function Contact() {
                   href={item.href}
                   target={item.label === 'Email' || item.label === 'Phone' ? undefined : '_blank'}
                   rel={item.label === 'Email' || item.label === 'Phone' ? undefined : 'noreferrer'}
-                  className="rounded-3xl border border-slate-200 bg-white/85 p-6 shadow-[0_18px_50px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_22px_65px_rgba(15,23,42,0.1)] backdrop-blur-xl"
+                  className="rounded-3xl border border-slate-200 bg-white/88 p-6 shadow-[0_18px_50px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-[0_22px_65px_rgba(15,23,42,0.1)] backdrop-blur-xl"
                 >
                   {content}
                 </a>
               ) : (
-                <div key={item.label} className="rounded-3xl border border-slate-200 bg-white/85 p-6 shadow-[0_18px_50px_rgba(15,23,42,0.06)] backdrop-blur-xl">
+                <div key={item.label} className="rounded-3xl border border-slate-200 bg-white/88 p-6 shadow-[0_18px_50px_rgba(15,23,42,0.06)] backdrop-blur-xl">
                   {content}
                 </div>
               );
             })}
           </div>
 
-          <div className="rounded-[2rem] border border-slate-200 bg-white/85 p-6 shadow-[0_25px_70px_rgba(15,23,42,0.08)] backdrop-blur-xl lg:p-8">
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-700">Send a message</p>
+          <div className="rounded-[2rem] border border-slate-200 bg-white/92 p-6 shadow-[0_25px_70px_rgba(15,23,42,0.08)] backdrop-blur-xl lg:p-8">
+            <div className="flex flex-col gap-3 border-b border-slate-200/70 pb-5 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-500">Send a message</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">Best for project inquiries, internship opportunities, and recruiter outreach.</p>
+              </div>
+              <span className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
+                Responsive form
+              </span>
+            </div>
             <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
               <div className="grid gap-4 sm:grid-cols-2">
                 <label className="block">
@@ -121,7 +129,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="inline-flex w-full items-center justify-center rounded-full bg-gradient-to-r from-blue-600 to-sky-500 px-6 py-4 text-sm font-semibold text-white shadow-lg shadow-blue-600/25 transition-all duration-300 hover:-translate-y-1"
+                className="inline-flex w-full items-center justify-center rounded-full bg-slate-950 px-6 py-4 text-sm font-semibold text-white shadow-[0_18px_40px_rgba(15,23,42,0.22)] transition-all duration-300 hover:-translate-y-1 hover:bg-slate-800"
               >
                 Submit
               </button>

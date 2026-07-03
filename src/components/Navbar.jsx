@@ -17,20 +17,20 @@ export default function Navbar({ activeSection, scrolled }) {
   return (
     <motion.header
       className={`sticky top-0 z-50 border-b border-transparent transition-all duration-300 ${
-        scrolled ? 'border-slate-200/70 bg-white/78 shadow-[0_10px_40px_rgba(15,23,42,0.08)] backdrop-blur-2xl' : 'bg-white/50 backdrop-blur-2xl'
+        scrolled ? 'border-slate-200/70 bg-white/72 shadow-[0_16px_60px_rgba(15,23,42,0.08)] backdrop-blur-2xl' : 'bg-white/48 backdrop-blur-2xl'
       }`}
       initial={{ y: -24, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.55, ease: 'easeOut' }}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
         <button
           type="button"
           onClick={() => navigateToSection('home')}
           className="group inline-flex items-center gap-3 text-left"
           aria-label="Go to home section"
         >
-          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,rgba(37,99,235,1),rgba(14,165,233,0.95))] text-sm font-bold text-white shadow-[0_18px_40px_rgba(37,99,235,0.24)] transition-transform duration-300 group-hover:scale-105">
+          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,rgba(15,23,42,1),rgba(37,99,235,0.92))] text-sm font-bold text-white shadow-[0_18px_40px_rgba(15,23,42,0.2)] transition-transform duration-300 group-hover:scale-105">
             AR
           </span>
           <span>
@@ -48,7 +48,7 @@ export default function Navbar({ activeSection, scrolled }) {
                 type="button"
                 onClick={() => navigateToSection(link.id)}
                 className={`rounded-full px-4 py-2 text-sm font-medium transition-all duration-300 ${
-                    isActive ? 'bg-slate-950 text-white shadow-md shadow-slate-950/20' : 'text-slate-600 hover:bg-slate-100 hover:text-slate-950'
+                  isActive ? 'bg-slate-950 text-white shadow-md shadow-slate-950/20' : 'text-slate-600 hover:bg-slate-100 hover:text-slate-950'
                 }`}
               >
                 {link.label}

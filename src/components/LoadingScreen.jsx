@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 
 export default function LoadingScreen() {
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-white">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.1),_transparent_28%),linear-gradient(180deg,#f8fafc_0%,#ffffff_100%)]">
       <motion.div
-        className="flex flex-col items-center gap-5"
+        className="elevated-panel flex flex-col items-center gap-5 rounded-[2rem] px-8 py-10"
         initial={{ opacity: 0, scale: 0.96 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.45, ease: 'easeOut' }}

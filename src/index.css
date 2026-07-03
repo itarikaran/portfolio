@@ -7,15 +7,18 @@
 @layer base {
 	html {
 		scroll-behavior: smooth;
+		background: #f4f5f7;
 	}
 
 	body {
 		@apply bg-slate-950 text-slate-900 antialiased;
 		font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 		background:
-			radial-gradient(circle at top, rgba(59, 130, 246, 0.12), transparent 28%),
-			radial-gradient(circle at 80% 20%, rgba(14, 165, 233, 0.1), transparent 24%),
-			linear-gradient(180deg, #f8fafc 0%, #eef2ff 42%, #ffffff 100%);
+			radial-gradient(circle at top left, rgba(37, 99, 235, 0.1), transparent 24%),
+			radial-gradient(circle at top right, rgba(15, 23, 42, 0.06), transparent 22%),
+			radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.95), transparent 34%),
+			linear-gradient(180deg, #f8fafc 0%, #f4f7fb 36%, #ffffff 100%);
+		background-attachment: fixed;
 		text-rendering: optimizeLegibility;
 	}
 
@@ -28,12 +31,20 @@
 	}
 
 	::selection {
-		background: rgba(37, 99, 235, 0.16);
+		background: rgba(30, 64, 175, 0.16);
 		color: #0f172a;
 	}
 
 	a {
 		@apply transition-colors duration-300;
+	}
+
+	a:focus-visible,
+	button:focus-visible,
+	input:focus-visible,
+	textarea:focus-visible {
+		outline: none;
+		box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.18), 0 0 0 1px rgba(37, 99, 235, 0.35);
 	}
 
 	img {
@@ -47,18 +58,38 @@
 	}
 
 	.surface-panel {
-		background: rgba(255, 255, 255, 0.74);
+		background: rgba(255, 255, 255, 0.8);
 		backdrop-filter: blur(24px);
 		box-shadow: 0 24px 80px rgba(15, 23, 42, 0.08);
 	}
 
 	.hero-grid {
 		background-image:
-			radial-gradient(circle at top left, rgba(37, 99, 235, 0.13), transparent 26%),
-			radial-gradient(circle at top right, rgba(14, 165, 233, 0.12), transparent 22%),
-			linear-gradient(rgba(15, 23, 42, 0.05) 1px, transparent 1px),
-			linear-gradient(90deg, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
-		background-size: auto, auto, 44px 44px, 44px 44px;
+			radial-gradient(circle at top left, rgba(37, 99, 235, 0.08), transparent 26%),
+			radial-gradient(circle at top right, rgba(15, 23, 42, 0.04), transparent 22%),
+			linear-gradient(rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+			linear-gradient(90deg, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
+		background-size: auto, auto, 48px 48px, 48px 48px;
+	}
+
+	.soft-shadow {
+		box-shadow: 0 24px 70px rgba(15, 23, 42, 0.08);
+	}
+
+	.elevated-panel {
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.82));
+		border: 1px solid rgba(226, 232, 240, 0.95);
+		backdrop-filter: blur(26px);
+		box-shadow: 0 24px 80px rgba(15, 23, 42, 0.08);
+	}
+
+	.premium-outline {
+		border: 1px solid rgba(226, 232, 240, 0.9);
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+	}
+
+	.premium-border {
+		background: linear-gradient(180deg, rgba(148, 163, 184, 0.24), rgba(255, 255, 255, 0));
 	}
 }
 
@@ -67,15 +98,15 @@
 }
 
 ::-webkit-scrollbar-track {
-	background: #eef2ff;
+	background: #edf2ff;
 }
 
 ::-webkit-scrollbar-thumb {
 	border-radius: 9999px;
-	border: 2px solid #eef2ff;
-	background: linear-gradient(180deg, #2563eb, #60a5fa);
+	border: 2px solid #edf2ff;
+	background: linear-gradient(180deg, #1d4ed8, #38bdf8);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: linear-gradient(180deg, #1d4ed8, #3b82f6);
+	background: linear-gradient(180deg, #1e40af, #0284c7);
 }
