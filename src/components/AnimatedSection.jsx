@@ -1,14 +1,14 @@
 import { motion, useReducedMotion } from 'framer-motion';
+import { smoothEase } from '../utils/motion.js';
 
 const sectionVariants = {
-  hidden: { opacity: 0, y: 28 },
+  hidden: { opacity: 0, y: 24 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.75,
-      ease: [0.22, 1, 0.36, 1],
-      staggerChildren: 0.1,
+      duration: 0.72,
+      ease: smoothEase,
     },
   },
 };

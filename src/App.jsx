@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect, useState } from 'react';
-import { motion, useScroll } from 'framer-motion';
+import { AnimatePresence, motion, useScroll } from 'framer-motion';
 import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
 import LoadingScreen from './components/LoadingScreen.jsx';
@@ -16,7 +16,7 @@ const CodingProfiles = lazy(() => import('./components/CodingProfiles.jsx'));
 const Contact = lazy(() => import('./components/Contact.jsx'));
 const Footer = lazy(() => import('./components/Footer.jsx'));
 
-const sectionIds = ['home', 'about', 'skills', 'experience', 'projects', 'education', 'certificates', 'contact'];
+const sectionIds = ['home', 'about', 'skills', 'experience', 'projects', 'education', 'certificates', 'coding-profiles', 'contact'];
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -96,7 +96,7 @@ function App() {
         </Suspense>
       </main>
       <ScrollToTop />
-      {isLoading ? <LoadingScreen /> : null}
+      <AnimatePresence>{isLoading ? <LoadingScreen /> : null}</AnimatePresence>
     </>
   );
 }
