@@ -10,7 +10,7 @@ export default function Experience() {
         <SectionHeading
           eyebrow="Experience"
           title="Experience"
-          description="Timeline-based summary of internship experience focused on shipping responsive, data-driven full stack features."
+          description="Timeline-based summary of internship and bootcamp experience focused on responsive full stack delivery and backend integration."
         />
 
         <div className="mt-12 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
@@ -22,7 +22,13 @@ export default function Experience() {
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-[0_18px_50px_rgba(15,23,42,0.05)]">
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-700">Java Full Stack Development Intern</p>
               <h3 className="mt-3 text-2xl font-bold text-slate-950">RORIRI Software Solutions</h3>
-              <p className="mt-2 text-sm font-medium text-slate-500">Internship engagement focused on responsive application delivery and backend integration.</p>
+              <p className="mt-2 text-sm font-medium text-slate-500">Developed responsive web applications using Spring Boot, React.js, Tailwind CSS, and MySQL.</p>
+            </div>
+
+            <div className="mt-5 rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-[0_18px_50px_rgba(15,23,42,0.05)]">
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-700">Full Stack Web Development Bootcamp</p>
+              <h3 className="mt-3 text-2xl font-bold text-slate-950">EasyShiksha</h3>
+              <p className="mt-2 text-sm font-medium text-slate-500">Built full stack web applications using Java, JSP, Servlets, HTML, CSS, JavaScript, and MySQL.</p>
             </div>
           </div>
 

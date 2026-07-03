@@ -55,8 +55,9 @@ export const skillGroups = [
     title: 'Backend',
     items: [
       { name: 'Spring Boot', level: 91 },
-      { name: 'Spring Framework', level: 89 },
-      { name: 'REST APIs', level: 94 },
+      { name: 'Spring MVC', level: 88 },
+      { name: 'Spring Data JPA', level: 90 },
+      { name: 'RESTful APIs', level: 94 },
       { name: 'JDBC', level: 83 },
     ],
   },
@@ -66,7 +67,6 @@ export const skillGroups = [
       { name: 'React.js', level: 90 },
       { name: 'HTML5', level: 95 },
       { name: 'CSS3', level: 91 },
-      { name: 'Tailwind CSS', level: 93 },
     ],
   },
   {
@@ -74,6 +74,7 @@ export const skillGroups = [
     items: [
       { name: 'MySQL', level: 90 },
       { name: 'SQL', level: 91 },
+      { name: 'Database Design', level: 88 },
     ],
   },
   {
@@ -81,14 +82,17 @@ export const skillGroups = [
     items: [
       { name: 'Git', level: 92 },
       { name: 'GitHub', level: 90 },
+      { name: 'Maven', level: 87 },
       { name: 'Postman', level: 89 },
+      { name: 'IntelliJ IDEA', level: 86 },
+      { name: 'VS Code', level: 94 },
     ],
   },
   {
     title: 'Core Concepts',
     items: [
       { name: 'OOP', level: 94 },
-      { name: 'Collections', level: 88 },
+      { name: 'Collections Framework', level: 88 },
       { name: 'Exception Handling', level: 90 },
       { name: 'DBMS', level: 87 },
     ],
@@ -96,18 +100,24 @@ export const skillGroups = [
 ];
 
 export const experienceHighlights = [
-  'Developed responsive web applications.',
-  'Worked with Java, Spring Boot, and React.',
-  'Developed REST APIs.',
-  'Integrated frontend with backend.',
-  'Used Git and GitHub for collaboration.',
+  'Developed responsive web applications using Spring Boot, React.js, Tailwind CSS, and MySQL.',
+  'Built and integrated REST APIs with frontend applications using Git for version control.',
+  'Built full stack web applications using Java, JSP, Servlets, HTML, CSS, JavaScript, and MySQL.',
+  'Deployed applications on Apache Tomcat and used Git and ChatGPT during development.',
 ];
 
 export const projects = [
   {
     name: 'Student Management System',
     stack: ['Java', 'Spring Boot', 'React', 'MySQL', 'REST API'],
-    features: ['CRUD operations', 'REST APIs', 'Frontend-backend integration', 'Responsive UI'],
+    features: ['Complete CRUD operations for student records', 'REST API integration', 'Frontend-backend integration', 'Database-driven workflow'],
+    github: 'https://github.com/itarikaran',
+    demo: 'https://arikaran.vercel.app',
+  },
+  {
+    name: 'Task Management System',
+    stack: ['React', 'Spring Boot', 'REST API', 'MySQL'],
+    features: ['Task assignment and priority management', 'Progress tracking', 'Deadline scheduling', 'Full stack workflow with API integration'],
     github: 'https://github.com/itarikaran',
     demo: 'https://arikaran.vercel.app',
   },
@@ -117,10 +127,10 @@ export const education = [
   {
     degree: 'B.E. Computer Science and Engineering',
     institution: 'VV College of Engineering',
-    score: '84%',
+    score: '84% | 2024 - 2027',
   },
   {
-    degree: 'Diploma',
+    degree: 'Diploma in Computer Science and Engineering',
     institution: 'RECT Polytechnic College',
     score: '94%',
   },
@@ -133,7 +143,7 @@ export const certifications = [
   },
   {
     provider: 'Infosys Springboard',
-    items: ['Learn Coding with Java', 'Spring 5 Basics', 'Spring Data JPA', 'Spring REST'],
+    items: ['Learn Coding with Java', 'Spring 5 Basics with Spring Boot', 'Spring Data JPA with Boot', 'Spring REST'],
   },
 ];
 

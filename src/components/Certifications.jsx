@@ -9,7 +9,7 @@ export default function Certifications() {
         <SectionHeading
           eyebrow="Certificates"
           title="Certifications"
-          description="Certification cards grouped by provider for clean scanning and easy portfolio credibility."
+          description="Certification cards grouped by provider for clean scanning and easy credibility checks."
         />
 
         <div className="mt-12 grid gap-5 lg:grid-cols-2">

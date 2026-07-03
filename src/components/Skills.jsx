@@ -11,7 +11,7 @@ export default function Skills() {
           <SectionHeading
             eyebrow="Skills"
             title="Skills"
-            description="A focused stack built for building reliable backend systems, polished interfaces, and maintainable full stack workflows."
+            description="A focused stack built around Java, Spring Boot, React.js, MySQL, REST APIs, and the tooling used in the updated resume."
           />
         </div>
 

@@ -3,10 +3,10 @@ import AnimatedSection from './AnimatedSection.jsx';
 import SectionHeading from './SectionHeading.jsx';
 
 const highlights = [
-  { label: 'Experience', value: 'Internship exposure', icon: FiAward },
-  { label: 'Projects', value: 'Full stack applications', icon: FiBox },
+  { label: 'Experience', value: 'RORIRI + EasyShiksha', icon: FiAward },
+  { label: 'Projects', value: 'Student and Task systems', icon: FiBox },
   { label: 'Technologies', value: 'Java, Spring Boot, React', icon: FiCode },
-  { label: 'Certifications', value: 'Industry aligned learning', icon: FiDatabase },
+  { label: 'Database', value: 'MySQL + SQL design', icon: FiDatabase },
 ];
 
 export default function About() {
@@ -17,7 +17,7 @@ export default function About() {
           <SectionHeading
             eyebrow="About Me"
             title="About Me"
-            description="Java Full Stack Developer with hands-on experience in Java, Spring Boot, React.js, MySQL, REST APIs, and Git. Skilled in developing full-stack web applications, implementing CRUD operations, integrating frontend and backend systems, and working with database-driven applications."
+            description="Java Full Stack Developer with hands-on experience in Java, Spring Boot, React.js, MySQL, REST APIs, and Git. Experienced in building responsive full stack applications, implementing CRUD functionality, integrating frontend and backend services, and designing relational databases."
           />
 
           <div className="grid gap-4 sm:grid-cols-2">

@@ -10,7 +10,7 @@ export default function Projects() {
         <SectionHeading
           eyebrow="Projects"
           title="Projects"
-          description="A focused case study card for a full stack student management system built with a practical production-style workflow."
+          description="Highlighted projects from the resume with the most relevant stack, features, and implementation focus."
         />
 
         <div className="mt-12 grid gap-6">
@@ -29,24 +29,28 @@ export default function Projects() {
                   </div>
 
                   <div className="mt-8 flex flex-wrap gap-3">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="inline-flex items-center gap-2 rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-slate-800"
-                    >
-                      <FiGithub />
-                      GitHub
-                    </a>
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:text-blue-700"
-                    >
-                      <FiExternalLink />
-                      Live Demo
-                    </a>
+                    {project.github ? (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-2 rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-slate-800"
+                      >
+                        <FiGithub />
+                        GitHub
+                      </a>
+                    ) : null}
+                    {project.demo ? (
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:text-blue-700"
+                      >
+                        <FiExternalLink />
+                        Live Demo
+                      </a>
+                    ) : null}
                   </div>
                 </div>
 

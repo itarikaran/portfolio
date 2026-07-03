@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { FiArrowRight, FiGithub, FiLinkedin } from 'react-icons/fi';
 import { SiLeetcode, SiHackerrank } from 'react-icons/si';
 
-const typingWords = ['Java Developer', 'Spring Boot Developer', 'React Developer', 'REST API Developer', 'Java Full Stack Developer'];
+const typingWords = ['Java Developer', 'Spring Boot Developer', 'React Developer', 'MySQL Developer', 'Java Full Stack Developer'];
 
 export default function Hero() {
   const [wordIndex, setWordIndex] = useState(0);
@@ -61,7 +61,7 @@ export default function Hero() {
           </div>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">
-            Java Full Stack Developer passionate about building scalable backend systems and modern responsive web applications using Java, Spring Boot, React, MySQL and REST APIs.
+            Java Full Stack Developer with hands-on experience in Java, Spring Boot, React.js, MySQL, REST APIs, and Git. I build responsive full stack applications with clean frontend-backend integration.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">

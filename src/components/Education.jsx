@@ -10,7 +10,7 @@ export default function Education() {
         <SectionHeading
           eyebrow="Education"
           title="Education"
-          description="Academic background presented in a timeline-style card layout for quick scanning."
+          description="Academic background from the updated resume presented in a timeline-style card layout for quick scanning."
         />
 
         <div className="mt-12 space-y-5">
