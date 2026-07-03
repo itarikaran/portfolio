@@ -16,7 +16,7 @@ const CodingProfiles = lazy(() => import('./components/CodingProfiles.jsx'));
 const Contact = lazy(() => import('./components/Contact.jsx'));
 const Footer = lazy(() => import('./components/Footer.jsx'));
 
-const sectionIds = ['home', 'about', 'skills', 'projects', 'experience', 'education', 'certificates', 'contact'];
+const sectionIds = ['home', 'about', 'skills', 'experience', 'projects', 'education', 'certificates', 'contact'];
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -86,8 +86,8 @@ function App() {
         <Suspense fallback={<SectionFallback />}>
           <About />
           <Skills />
-          <Projects />
           <Experience />
+          <Projects />
           <Education />
           <Certifications />
           <CodingProfiles />
