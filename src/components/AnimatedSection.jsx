@@ -19,12 +19,16 @@ export default function AnimatedSection({ id, className = '', children, alternat
   return (
     <motion.section
       id={id}
-      className={`scroll-mt-24 ${alternate ? 'bg-slate-50/95' : 'bg-white'} ${className}`}
+      className={`scroll-mt-24 relative overflow-hidden ${alternate ? 'bg-slate-50/80' : 'bg-white/90'} ${className}`}
       initial={reduceMotion ? false : 'hidden'}
       whileInView={reduceMotion ? undefined : 'visible'}
       viewport={{ once: true, amount: 0.2 }}
       variants={sectionVariants}
     >
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 opacity-[0.45]">
+        <div className="absolute left-[-6rem] top-12 h-40 w-40 rounded-full bg-blue-100/50 blur-3xl" />
+        <div className="absolute right-[-5rem] bottom-20 h-44 w-44 rounded-full bg-sky-100/50 blur-3xl" />
+      </div>
       {children}
     </motion.section>
   );

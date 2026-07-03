@@ -32,7 +32,7 @@ export default function Contact() {
         <SectionHeading
           eyebrow="Contact"
           title="Contact"
-          description="Direct contact details and a simple no-backend form for quick outreach."
+          description="Direct contact details and a polished no-backend form for quick outreach."
         />
 
         <div className="mt-12 grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
@@ -64,19 +64,19 @@ export default function Contact() {
                   href={item.href}
                   target={item.label === 'Email' || item.label === 'Phone' ? undefined : '_blank'}
                   rel={item.label === 'Email' || item.label === 'Phone' ? undefined : 'noreferrer'}
-                  className="rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_18px_50px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_22px_65px_rgba(15,23,42,0.1)]"
+                  className="rounded-3xl border border-slate-200 bg-white/85 p-6 shadow-[0_18px_50px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_22px_65px_rgba(15,23,42,0.1)] backdrop-blur-xl"
                 >
                   {content}
                 </a>
               ) : (
-                <div key={item.label} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_18px_50px_rgba(15,23,42,0.06)]">
+                <div key={item.label} className="rounded-3xl border border-slate-200 bg-white/85 p-6 shadow-[0_18px_50px_rgba(15,23,42,0.06)] backdrop-blur-xl">
                   {content}
                 </div>
               );
             })}
           </div>
 
-          <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-[0_25px_70px_rgba(15,23,42,0.08)] lg:p-8">
+          <div className="rounded-[2rem] border border-slate-200 bg-white/85 p-6 shadow-[0_25px_70px_rgba(15,23,42,0.08)] backdrop-blur-xl lg:p-8">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-700">Send a message</p>
             <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
               <div className="grid gap-4 sm:grid-cols-2">
