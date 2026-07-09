@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { FiArrowRight, FiDownload, FiMail, FiMenu, FiX } from 'react-icons/fi';
+import { FiArrowRight, FiDownload, FiMail, FiMenu, FiX, FiGithub, FiLinkedin } from 'react-icons/fi';
 import { navLinks } from '../data/portfolio.js';
 import { smoothEase } from '../utils/motion.js';
 
@@ -87,24 +87,17 @@ export default function Navbar({ activeSection, scrolled }) {
           </button>
         </div>
 
-        <button
-          type="button"
-          onClick={() => navigateToSection('contact')}
-          className="hidden items-center gap-2 rounded-full bg-slate-950 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-slate-800 md:inline-flex xl:hidden"
-        >
-          <FiMail className="text-base" />
-          Contact
-        </button>
-
-        <button
-          type="button"
-          className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-900 shadow-sm lg:hidden"
-          onClick={() => setMenuOpen((previous) => !previous)}
-          aria-expanded={menuOpen}
-          aria-label="Toggle navigation menu"
-        >
-          {menuOpen ? <FiX className="text-xl" /> : <FiMenu className="text-xl" />}
-        </button>
+        <div className="flex items-center gap-3 lg:hidden">
+          <button
+            type="button"
+            className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-900 shadow-sm"
+            onClick={() => setMenuOpen((previous) => !previous)}
+            aria-expanded={menuOpen}
+            aria-label="Toggle navigation menu"
+          >
+            {menuOpen ? <FiX className="text-xl" /> : <FiMenu className="text-xl" />}
+          </button>
+        </div>
       </div>
 
       <AnimatePresence>
