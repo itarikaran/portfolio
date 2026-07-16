@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { FiArrowRight, FiDownload, FiMail, FiMenu, FiX, FiGithub, FiLinkedin } from 'react-icons/fi';
+import { FiArrowRight, FiDownload, FiMenu, FiX } from 'react-icons/fi';
 import { navLinks } from '../data/portfolio.js';
 import { smoothEase } from '../utils/motion.js';
 
