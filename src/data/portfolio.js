@@ -165,7 +165,7 @@ export const projects = [
     features: ['Aptitude question practice', 'Quiz answer validation', 'Score and result tracking', 'Full stack workflow with API integration'],
     impact: ['Helped users practice aptitude topics through a focused quiz flow', 'Organized quiz data with relational storage and backend validation'],
     github: 'https://github.com/itarikaran',
-    demo: 'https://arikaran.vercel.app',
+    demo: 'https://apskey.vercel.app',
   },
 ];
 
