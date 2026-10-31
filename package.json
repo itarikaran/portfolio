@@ -1,7 +1,0 @@
-{
-  "name": "ari-karan-portfolio",
-  "private": true,
-  "version": "1.0.0",
-  "type": "module",
-  "scripts": { "dev": "node server.js", "build": "node build.js", "preview": "node server.js" }
-}
