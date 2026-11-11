@@ -1,0 +1,92 @@
+/* ===== GLOBAL RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263238;
+    line-height: 1.7;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ===== HEADINGS ===== */
+h1 {
+    color: #1e293b;
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #1e40af;
+    font-size: 21px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 6px;
+}
+
+/* ===== PARAGRAPHS ===== */
+p {
+    margin-bottom: 12px;
+}
+
+/* ===== LINKS ===== */
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #1e40af;
+    text-decoration: underline;
+}
+
+/* ===== HORIZONTAL LINE ===== */
+hr {
+    border: none;
+    border-top: 1px solid #cbd5e1;
+    margin: 25px 0;
+}
+
+/* ===== LISTS ===== */
+ul {
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* ===== BOLD TEXT ===== */
+b {
+    color: #1e293b;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 600px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+}
