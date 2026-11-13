@@ -1,0 +1,68 @@
+export const projects = [
+  {
+    id: 'job-tracker',
+    title: 'JobTracker',
+    subtitle: 'Full-Stack Job Application Tracker',
+    description:
+      'Developing a full-stack job tracking platform to manage job applications, recruitment stages, and interview schedules.',
+    duration: 'Nov 2026 – Present',
+    stack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
+    features: [
+      'Secure JWT authentication',
+      'RESTful APIs',
+      'User-specific access control',
+      'Responsive dashboard',
+      'Application tracking',
+      'Advanced search and filtering',
+      'Recruitment analytics',
+    ],
+    githubUrl: 'https://github.com/itarikaran/job-track',
+    liveUrl: 'https://job-track.vercel.app',
+  },
+  {
+    id: 'self-sync',
+    title: 'SelfSync',
+    subtitle: 'Personal Productivity & Habit Tracking Platform',
+    description:
+      'Developed a productivity platform to manage daily tasks, track habits, and monitor personal goals.',
+    duration: 'Aug – Oct 2026',
+    stack: [
+      'React.js',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'Tailwind CSS',
+      'Chart.js',
+    ],
+    features: [
+      'Habit streak tracking',
+      'Recurring tasks',
+      'Reminders',
+      'Progress tracking',
+      'Interactive Chart.js analytics',
+      'Reusable React components',
+      'Secure RESTful APIs',
+    ],
+    githubUrl: 'https://github.com/itarikaran/self-sync',
+    liveUrl: 'https://self-sync.vercel.app',
+  },
+  {
+    id: 'fin-flow',
+    title: 'FinFlow',
+    subtitle: 'Personal Finance & Expense Management Platform',
+    description:
+      'Built a personal finance management platform to track income, expenses, budgets, and financial transactions.',
+    duration: 'May – July 2026',
+    stack: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
+    features: [
+      'Transaction categorization',
+      'Monthly budget management',
+      'Recurring expense tracking',
+      'Secure authentication',
+      'Server-side validation',
+      'Optimized RESTful APIs',
+    ],
+    githubUrl: 'https://github.com/itarikaran/fin-flow',
+    liveUrl: 'https://finflow.vercel.app',
+  },
+];
