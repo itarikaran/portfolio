@@ -17,7 +17,7 @@ export const projects = [
       'Recruitment analytics',
     ],
     githubUrl: 'https://github.com/itarikaran/job-track',
-    liveUrl: 'https://job-track.vercel.app',
+    liveUrl: 'https://job-track-jt.vercel.app',
   },
   {
     id: 'self-sync',
