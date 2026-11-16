@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Children, cloneElement, isValidElement } from 'react';
 
 export function Button({
   children,
@@ -33,10 +34,12 @@ export function Button({
   const btnClass = `${base} ${variants[variant]} ${sizes[size]} ${className}`;
 
   if (asChild) {
-    return (
-      <span className={btnClass} onClick={onClick}>
-        {children}
-      </span>
+    return Children.map(children, (child) =>
+      isValidElement(child)
+        ? cloneElement(child, {
+            className: `${child.props.className ?? ''} ${btnClass}`,
+          })
+        : child
     );
   }
 
