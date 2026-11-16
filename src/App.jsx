@@ -11,27 +11,29 @@ import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 
 const pageVariants = {
-  initial: { opacity: 0 },
-  animate: { opacity: 1 },
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
   exit: { opacity: 0 },
 };
 
 const pageTransition = {
-  duration: 0.3,
+  duration: 0.75,
   ease: 'easeInOut',
 };
 
 function RoutingContent() {
   const location = useLocation();
 
+  // Scroll to top immediately on route change so the entering page always
+  // starts at the top.
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, left: 0 });
   }, [location.pathname]);
 
   return (
-    <AnimatePresence mode="sync">
+    <AnimatePresence mode="wait">
       <motion.div
-        key={location.key}
+        key={location.pathname}
         initial={pageVariants.initial}
         animate={pageVariants.animate}
         exit={pageVariants.exit}

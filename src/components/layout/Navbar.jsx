@@ -12,7 +12,9 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', handleScroll);
+    // Reflect scroll state on mount (e.g. after a refresh mid-page)
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -29,7 +31,12 @@ function Navbar() {
     };
   }, [isOpen]);
 
-  const isActive = (href) => location.pathname === href;
+  const isActive = (href) => {
+    if (href === '/') {
+      return location.pathname === '/';
+    }
+    return location.pathname === href || location.pathname.startsWith(`${href}/`);
+  };
 
   return (
     <>

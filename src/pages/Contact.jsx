@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { Section, Container, Button, Card, Badge } from '../components/ui';
 
 const CONTACT = {
@@ -28,13 +29,23 @@ export default function Contact() {
               <div className="flex items-center gap-2 mb-6">
                 <Badge variant="violet">Get in Touch</Badge>
               </div>
-              <h2 className="text-4xl font-bold leading-tight mb-6">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.75, ease: 'easeInOut' }}
+                className="text-4xl font-bold leading-tight mb-6"
+              >
                 Let's build something great together
-              </h2>
-              <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-lg">
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.75, ease: 'easeInOut' }}
+                className="text-gray-600 text-lg leading-relaxed mb-8 max-w-lg"
+              >
                 Have a project in mind or just want to say hello? Reach out
                 using the details below or send a message.
-              </p>
+              </motion.p>
               <div className="space-y-6">
                 <a
                   href={`mailto:${CONTACT.email}`}

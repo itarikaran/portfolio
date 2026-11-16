@@ -22,6 +22,7 @@ export default function About() {
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.75, ease: 'easeInOut' }}
                 className="text-4xl font-bold leading-tight mb-6"
               >
                 About Me
@@ -29,7 +30,7 @@ export default function About() {
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 }}
+                transition={{ duration: 0.75, ease: 'easeInOut' }}
                 className="text-gray-600 text-lg leading-relaxed mb-8 max-w-lg"
               >
                 MERN Stack Developer with hands-on experience building
@@ -55,6 +56,7 @@ export default function About() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.75, ease: 'easeInOut' }}
               className="relative pl-12 border-l border-gray-200"
             >
               <span className="absolute -left-[9px] top-0 block w-4 h-4 rounded-full bg-black border-4 border-gray-100" />
@@ -68,7 +70,7 @@ export default function About() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
+              transition={{ duration: 0.75, ease: 'easeInOut' }}
               className="relative pl-12 border-l border-gray-200"
             >
               <span className="absolute -left-[9px] top-0 block w-4 h-4 rounded-full bg-black border-4 border-gray-100" />

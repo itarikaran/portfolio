@@ -29,15 +29,30 @@ export default function ProjectDetail() {
               <span className="text-xs font-medium text-gray-500 uppercase tracking-wider">
                 {project.duration}
               </span>
-              <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6">
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.75, ease: 'easeInOut' }}
+                className="text-4xl lg:text-5xl font-bold leading-tight mb-6"
+              >
                 {project.title}
-              </h1>
-              <p className="text-gray-600 text-lg leading-relaxed mb-6">
+              </motion.h1>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.75, ease: 'easeInOut' }}
+                className="text-gray-600 text-lg leading-relaxed mb-6"
+              >
                 {project.subtitle}
-              </p>
-              <p className="text-gray-600 text-lg leading-relaxed mb-8">
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.75, ease: 'easeInOut' }}
+                className="text-gray-600 text-lg leading-relaxed mb-8"
+              >
                 {project.description}
-              </p>
+              </motion.p>
               <div className="flex flex-wrap gap-3 mb-8">
                 {project.stack.map((tag) => (
                   <Badge key={tag} variant="subtle">

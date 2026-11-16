@@ -42,6 +42,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Keep section targets clear of the fixed navbar on anchor jumps */
+section {
+  scroll-margin-top: 86px;
+}
+
 body {
   background-color: var(--color-white);
   color: var(--color-black);
