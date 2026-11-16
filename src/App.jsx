@@ -31,13 +31,13 @@ function RoutingContent() {
   }, [location.pathname]);
 
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence>
       <motion.div
         key={location.pathname}
         initial={pageVariants.initial}
         animate={pageVariants.animate}
-        exit={pageVariants.exit}
         transition={pageTransition}
+
         className="min-h-screen bg-white"
       >
         <Routes>
