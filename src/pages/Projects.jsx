@@ -16,17 +16,18 @@ export default function Projects() {
 
   return (
     <div className="bg-white">
-      <Section padding="py-24">
+      <Section padding="py-16 sm:py-24">
         <Container>
-          <div className="flex flex-col lg:flex-row justify-between items-end gap-6 mb-12">
+          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-6 mb-10 sm:mb-12">
             <div>
               <h2 className="text-3xl font-bold mb-2">Selected Projects</h2>
               <p className="text-gray-600">A curated showcase of work.</p>
             </div>
-            <div className="flex gap-3 overflow-x-auto pb-2">
+            <div className="flex w-full lg:w-auto gap-3 overflow-x-auto pb-2 -mb-2">
               <Button
                 variant={filter === 'all' ? 'black' : 'ghost'}
                 size="sm"
+                className="shrink-0 whitespace-nowrap"
                 onClick={() => setFilter('all')}
               >
                 All
@@ -36,6 +37,7 @@ export default function Projects() {
                   key={stack}
                   variant={filter === stack ? 'black' : 'ghost'}
                   size="sm"
+                  className="shrink-0 whitespace-nowrap"
                   onClick={() => setFilter(stack)}
                 >
                   {stack}
@@ -44,21 +46,21 @@ export default function Projects() {
             </div>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {filtered.map((project) => (
               <motion.div
                 key={project.id}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 }}
-                className="group relative"
+                className="group relative min-w-0"
               >
-                <Card padding="p-6" hover className="overflow-hidden">
-                  <div className="flex justify-between items-start mb-4">
+                <Card padding="p-4 sm:p-6" hover className="h-full overflow-hidden">
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-4">
                     <span className="text-xs font-medium text-gray-500 uppercase tracking-wider">
                       {project.duration}
                     </span>
-                    <Badge variant="violet" className="text-xs">
+                    <Badge variant="violet" className="self-start text-xs">
                       Case Study
                     </Badge>
                   </div>
@@ -75,7 +77,7 @@ export default function Projects() {
                   <p className="text-gray-600 text-sm mb-4 line-clamp-2">
                     {project.description}
                   </p>
-                  <div className="flex gap-3">
+                  <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
                     <Button variant="text" size="sm" asChild>
                       <Link to={`/project/${project.id}`}>View Details</Link>
                     </Button>
