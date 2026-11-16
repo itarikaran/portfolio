@@ -40,34 +40,11 @@ export default function Resume() {
                 <span className="font-medium text-gray-700">Resume Preview</span>
                 <span className="text-xs text-gray-500">4.3 MB · PDF</span>
               </div>
-              <embed
+              <iframe
                 src="/resume.pdf"
-                type="application/pdf"
-                className="w-full h-[80vh] md:h-[600px] border-0"
+                className="w-full h-[600px] border-0"
                 title="Resume preview"
               />
-              <div className="mt-4 flex flex-col sm:flex-row sm:items-center gap-2">
-                <a
-                  href="/resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-black underline text-sm"
-                >
-                  Open PDF in new tab
-                </a>
-                <span className="text-gray-400 text-xs hidden sm:inline">·</span>
-                <a
-                  href="/resume.pdf"
-                  download
-                  className="text-black underline text-sm"
-                >
-                  Download Resume
-                </a>
-              </div>
-              <p className="mt-2 text-xs text-gray-500">
-                If the preview does not appear, use the links above to open or
-                download the resume.
-              </p>
             </div>
 
             <p className="mt-6 text-xs text-gray-500">
