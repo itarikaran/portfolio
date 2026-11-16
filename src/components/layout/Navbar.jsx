@@ -87,7 +87,7 @@ function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'tween', duration: 0.25, ease: 'easeOut' }}
-              className="absolute inset-y-0 right-0 w-full max-w-sm overflow-y-auto border-l border-gray-200 bg-white px-6 pb-8 pt-6 shadow-2xl sm:px-8"
+              className="absolute inset-y-0 right-0 w-1/2 overflow-y-auto border-l border-gray-200 bg-white px-4 pb-8 pt-6 shadow-2xl sm:px-6"
               onClick={(e) => e.stopPropagation()}
             >
               <button
