@@ -34,7 +34,7 @@ export default function Home() {
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-none text-black whitespace-nowrap">
                   Ari Karan
                 </h1>
-                <h2 className="text-base sm:text-lg lg:text-xl font-bold tracking-tight leading-none text-violet-600 whitespace-nowrap">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight leading-none text-violet-600 whitespace-nowrap">
                   Full Stack Developer
                 </h2>
               </motion.div>
