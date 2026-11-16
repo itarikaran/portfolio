@@ -47,7 +47,7 @@ function Navbar() {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`text-sm font-medium transition-colors ${isActive(item.href) ? 'text-black' : 'text-gray-600'
+                  className={`text-sm font-medium transition-colors duration-300 ease-in-out ${isActive(item.href) ? 'text-black' : 'text-gray-600'
                     }`}
                 >
                   {item.name}
@@ -104,7 +104,7 @@ function Navbar() {
                     key={item.name}
                     to={item.href}
                     onClick={() => setIsOpen(false)}
-                    className={`block text-lg font-medium transition-colors ${isActive(item.href) ? 'text-black' : 'text-gray-600'
+                    className={`block text-lg font-medium transition-colors duration-300 ease-in-out ${isActive(item.href) ? 'text-black' : 'text-gray-600'
                       }`}
                   >
                     {item.name}

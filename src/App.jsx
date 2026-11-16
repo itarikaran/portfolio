@@ -15,6 +15,11 @@ const pageVariants = {
   exit: { opacity: 0 },
 };
 
+const pageTransition = {
+  duration: 0.3,
+  ease: 'easeInOut',
+};
+
 function RoutingContent() {
   const location = useLocation();
 
@@ -25,6 +30,7 @@ function RoutingContent() {
         initial={pageVariants.initial}
         animate={pageVariants.animate}
         exit={pageVariants.exit}
+        transition={pageTransition}
         className="min-h-screen bg-white"
       >
         <Routes>
