@@ -31,11 +31,11 @@ export default function Home() {
                 transition={{ duration: 0.7, delay: 0.1 }}
                 className="space-y-2 lg:space-y-3"
               >
-                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-none text-black whitespace-nowrap">
-                  A R I K A R A N
+                <h1 className="text-5xl sm:text-6xl lg:text-8xl font-quicksand tracking-tight leading-none text-black whitespace-nowrap">
+                  Ari Karan
                 </h1>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight leading-none text-violet-600 whitespace-nowrap">
-                  FULL STACK DEVELOPER
+                <h2 className="text-base sm:text-lg lg:text-4xl font-bold tracking-tight leading-none text-violet-600 whitespace-nowrap">
+                  Full Stack Developer
                 </h2>
               </motion.div>
               <motion.p
