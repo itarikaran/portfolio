@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import {
   Section,
   Container,
-  GradientText,
   Button,
   Card,
   ScrollReveal,
@@ -26,15 +25,19 @@ export default function Home() {
                   Tamil Nadu, India
                 </span>
               </motion.div>
-              <motion.h1
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.1 }}
-                className="text-5xl lg:text-7xl font-bold tracking-tight leading-tight"
+                className="space-y-2 lg:space-y-3"
               >
-                Ari Karan{' '}
-                <GradientText className="text-5xl lg:text-7xl">Full Stack Developer</GradientText>
-              </motion.h1>
+                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-none text-black whitespace-nowrap">
+                  Ari Karan
+                </h1>
+                <h2 className="text-base sm:text-lg lg:text-xl font-bold tracking-tight leading-none text-violet-600 whitespace-nowrap">
+                  Full Stack Developer
+                </h2>
+              </motion.div>
               <motion.p
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
