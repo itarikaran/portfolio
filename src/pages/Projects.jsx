@@ -16,7 +16,7 @@ export default function Projects() {
 
   return (
     <div className="bg-white">
-      <Section padding="py-16 sm:py-24">
+      <Section padding="pt-28 pb-16 sm:py-24">
         <Container>
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-6 mb-10 sm:mb-12">
             <div>
