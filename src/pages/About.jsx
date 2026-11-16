@@ -17,7 +17,7 @@ export default function About() {
             </div>
             <div>
               <div className="flex items-center gap-2 mb-6">
-                <Badge variant="black">MERN Stack Developer</Badge>
+                <Badge variant="black">Full Stack Developer</Badge>
               </div>
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
@@ -33,8 +33,8 @@ export default function About() {
                 transition={{ duration: 0.75, ease: 'easeInOut' }}
                 className="text-gray-600 text-lg leading-relaxed mb-8 max-w-lg"
               >
-                MERN Stack Developer with hands-on experience building
-                full-stack web applications using React.js, Node.js,
+                Full Stack Developer with hands-on experience building
+                web applications using React.js, Node.js,
                 Express.js, and MongoDB. Skilled in developing RESTful
                 APIs, implementing JWT authentication, managing databases,
                 and creating responsive user interfaces. Strong foundation

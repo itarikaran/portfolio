@@ -33,7 +33,7 @@ export default function Home() {
                 className="text-5xl lg:text-7xl font-bold tracking-tight leading-tight"
               >
                 Ari Karan{' '}
-                <GradientText className="text-5xl lg:text-7xl">MERN Stack Developer</GradientText>
+                <GradientText className="text-5xl lg:text-7xl">Full Stack Developer</GradientText>
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0, y: 30 }}
@@ -41,8 +41,8 @@ export default function Home() {
                 transition={{ duration: 0.7, delay: 0.2 }}
                 className="text-gray-600 text-lg lg:text-xl max-w-md leading-relaxed"
               >
-                MERN Stack Developer with hands-on experience building
-                full-stack web applications using React.js, Node.js,
+                Full Stack Developer with hands-on experience building
+                web applications using React.js, Node.js,
                 Express.js, and MongoDB. Skilled in RESTful APIs, JWT
                 authentication, database management, and responsive UIs.
               </motion.p>
