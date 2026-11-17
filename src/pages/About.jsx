@@ -11,8 +11,13 @@ export default function About() {
             <div className="mb-12 lg:mb-0">
               <img
                 src="/arikaran.png"
-                alt="Profile"
-                className="w-full max-w-md rounded-xl shadow-lg border border-gray-100 object-cover"
+                alt="Ari Karan - Profile"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                width="448"
+                height="448"
+                className="w-full max-w-md aspect-square rounded-xl shadow-lg border border-gray-100 object-cover"
               />
             </div>
             <div>
