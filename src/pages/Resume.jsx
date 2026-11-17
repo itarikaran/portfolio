@@ -1,5 +1,8 @@
 import { motion } from 'framer-motion';
-import { Section, Container, Button, Card } from '../components/ui';
+import { Section, Container, Button } from '../components/ui';
+
+// Increment the version whenever you update resume.pdf
+const resumeUrl = '/resume.pdf?v=2';
 
 export default function Resume() {
   return (
@@ -15,6 +18,7 @@ export default function Resume() {
             >
               Resume
             </motion.h1>
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -26,31 +30,53 @@ export default function Resume() {
             </motion.p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button
-                asChild
-                variant="primary"
-                className="px-8 py-3"
-              >
-                <a href="/resume.pdf" download>Download PDF</a>
+              <Button asChild variant="primary" className="px-8 py-3">
+                <a href={resumeUrl} download="resume.pdf">
+                  Download PDF
+                </a>
+              </Button>
+
+              <Button asChild variant="outline" className="px-8 py-3">
+                <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
+                  Open Resume
+                </a>
               </Button>
             </div>
 
             <div className="mt-16 border border-gray-200 rounded-lg overflow-hidden shadow-sm">
               <div className="bg-gray-50 p-4 border-b border-gray-200 flex justify-between items-center">
-                <span className="font-medium text-gray-700">Resume Preview</span>
-                <span className="text-xs text-gray-500">4.3 MB · PDF</span>
+                <span className="font-medium text-gray-700">
+                  Resume Preview
+                </span>
+                <span className="text-xs text-gray-500">PDF</span>
               </div>
+
               <iframe
-                src="/resume.pdf"
+                key={resumeUrl}
+                src={resumeUrl}
                 className="w-full h-[600px] border-0"
                 title="Resume preview"
+                loading="eager"
               />
             </div>
 
             <p className="mt-6 text-xs text-gray-500">
               Having trouble viewing?{' '}
-              <a href="/resume.pdf" download className="text-black underline">
-                Download directly
+              <a
+                href={resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-black underline"
+              >
+                Open PDF directly
+              </a>
+              {' or '}
+              <a
+                href={resumeUrl}
+                download="resume.pdf"
+                className="text-black underline"
+              >
+                Download PDF
               </a>
               .
             </p>
