@@ -25,7 +25,7 @@ export default function Contact() {
       <Section padding="py-24">
         <Container>
           <div className="lg:grid lg:grid-cols-2 lg:gap-16">
-            <div className="space-y-8">
+            <div className="space-y-8 mb-10 lg:mb-0">
               <div className="flex items-center gap-2 mb-6">
                 <Badge variant="violet">Get in Touch</Badge>
               </div>
