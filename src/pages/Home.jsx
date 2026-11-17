@@ -13,7 +13,7 @@ export default function Home() {
     <div className="bg-white">
       <section className="relative pt-32 pb-24 px-6 sm:px-8 lg:px-12 overflow-hidden">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-[1.5fr_1fr] gap-12 items-center">
             <div className="space-y-6">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -42,12 +42,16 @@ export default function Home() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.2 }}
-                className="text-gray-600 text-lg lg:text-xl max-w-md leading-relaxed"
+                className="w-full max-w-4xl text-gray-600 text-lg lg:text-xl leading-relaxed"
               >
-                Full Stack Developer with hands-on experience building
-                web applications using React.js, Node.js,
-                Express.js, and MongoDB. Skilled in RESTful APIs, JWT
-                authentication, database management, and responsive UIs.
+                Aspiring Full Stack Developer pursuing a B.E. in Computer
+                Science and Engineering, with hands-on experience building
+                full-stack web applications using JavaScript, TypeScript,
+                React.js, Next.js, Node.js, Express.js, NestJS, MongoDB and
+                PostgreSQL. Skilled in developing RESTful APIs, implementing
+                authentication and authorization, integrating databases, and
+                building AI-powered application features. Interested in
+                developing scalable, secure and responsive web applications.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -63,7 +67,7 @@ export default function Home() {
                 </Button>
               </motion.div>
             </div>
-            <div className="hidden lg:block">
+            <div className="hidden lg:block ml-15">
               <motion.img
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -85,20 +89,24 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <ScrollReveal delay={0.1}>
               <Card padding="p-6" hover={false}>
-                <h3 className="text-lg font-bold mb-2">JavaScript</h3>
-                <p className="text-gray-600 text-sm">ES6+</p>
+                <h3 className="text-lg font-bold mb-2">Languages</h3>
+                <p className="text-gray-600 text-sm">JavaScript · TypeScript</p>
               </Card>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
               <Card padding="p-6" hover={false}>
-                <h3 className="text-lg font-bold mb-2">React.js</h3>
-                <p className="text-gray-600 text-sm">Frontend</p>
+                <h3 className="text-lg font-bold mb-2">Frontend</h3>
+                <p className="text-gray-600 text-sm">
+                  React.js · Next.js · Tailwind CSS
+                </p>
               </Card>
             </ScrollReveal>
             <ScrollReveal delay={0.3}>
               <Card padding="p-6" hover={false}>
-                <h3 className="text-lg font-bold mb-2">Node.js</h3>
-                <p className="text-gray-600 text-sm">Backend</p>
+                <h3 className="text-lg font-bold mb-2">Backend</h3>
+                <p className="text-gray-600 text-sm">
+                  Node.js · NestJS · Express.js
+                </p>
               </Card>
             </ScrollReveal>
           </div>

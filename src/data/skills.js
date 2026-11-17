@@ -1,12 +1,9 @@
 export const skills = {
-  languages: ['JavaScript (ES6+)', 'HTML5', 'CSS3'],
-  frontend: ['React.js', 'Tailwind CSS', 'Redux', 'Responsive Design'],
-  backend: [
-    'Node.js',
-    'Express.js',
-    'RESTful API Architecture',
-    'JWT Authentication',
-  ],
-  database: ['MongoDB', 'Mongoose'],
+  languages: ['JavaScript', 'TypeScript'],
+  frontend: ['HTML5', 'Tailwind CSS', 'React.js', 'Next.js'],
+  backend: ['Node.js', 'Express.js', 'NestJS'],
+  database: ['MongoDB', 'PostgreSQL'],
+  orm: ['Prisma'],
+  api: ['REST APIs', 'JSON'],
   tools: ['Git', 'GitHub', 'VS Code', 'Vercel', 'Render'],
 };

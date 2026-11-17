@@ -1,19 +1,9 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Section, Container, Badge, Button, Card } from '../components/ui';
 import { projects } from '../data/projects';
 
 export default function Projects() {
-  const [filter, setFilter] = useState('all');
-
-  const stacks = [...new Set(projects.flatMap((p) => p.stack))].sort();
-
-  const filtered =
-    filter === 'all'
-      ? projects
-      : projects.filter((p) => p.stack.includes(filter));
-
   return (
     <div className="bg-white">
       <Section padding="pt-28 pb-16 sm:py-24">
@@ -23,31 +13,10 @@ export default function Projects() {
               <h2 className="text-3xl font-bold mb-2">Selected Projects</h2>
               <p className="text-gray-600">A curated showcase of work.</p>
             </div>
-            <div className="flex w-full lg:w-auto gap-3 overflow-x-auto pb-2 -mb-2">
-              <Button
-                variant={filter === 'all' ? 'black' : 'ghost'}
-                size="sm"
-                className="shrink-0 whitespace-nowrap"
-                onClick={() => setFilter('all')}
-              >
-                All
-              </Button>
-              {stacks.map((stack) => (
-                <Button
-                  key={stack}
-                  variant={filter === stack ? 'black' : 'ghost'}
-                  size="sm"
-                  className="shrink-0 whitespace-nowrap"
-                  onClick={() => setFilter(stack)}
-                >
-                  {stack}
-                </Button>
-              ))}
-            </div>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {filtered.map((project) => (
+            {projects.map((project) => (
               <motion.div
                 key={project.id}
                 initial={{ opacity: 0, y: 20 }}

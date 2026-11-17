@@ -33,13 +33,14 @@ export default function About() {
                 transition={{ duration: 0.75, ease: 'easeInOut' }}
                 className="text-gray-600 text-lg leading-relaxed mb-8 max-w-lg"
               >
-                Full Stack Developer with hands-on experience building
-                web applications using React.js, Node.js,
-                Express.js, and MongoDB. Skilled in developing RESTful
-                APIs, implementing JWT authentication, managing databases,
-                and creating responsive user interfaces. Strong foundation
-                in JavaScript, problem-solving, and Git-based development,
-                with a focus on building scalable web applications.
+                Aspiring Full Stack Developer pursuing a B.E. in Computer
+                Science and Engineering, with hands-on experience building
+                full-stack web applications using JavaScript, TypeScript,
+                React.js, Next.js, Node.js, Express.js, NestJS, MongoDB and
+                PostgreSQL. Skilled in developing RESTful APIs, implementing
+                authentication and authorization, integrating databases, and
+                building AI-powered application features. Interested in
+                developing scalable, secure and responsive web applications.
               </motion.p>
               <Button asChild>
                 <a href="/resume.pdf" download>Download Resume</a>
@@ -171,6 +172,26 @@ export default function About() {
               <h3 className="text-lg font-bold mb-4">Tools</h3>
               <div className="flex flex-wrap gap-2">
                 {skills.tools.map((s) => (
+                  <Badge key={s} variant="subtle" className="text-xs">
+                    {s}
+                  </Badge>
+                ))}
+              </div>
+            </Card>
+            <Card padding="p-6" hover={false}>
+              <h3 className="text-lg font-bold mb-4">ORM</h3>
+              <div className="flex flex-wrap gap-2">
+                {skills.orm.map((s) => (
+                  <Badge key={s} variant="subtle" className="text-xs">
+                    {s}
+                  </Badge>
+                ))}
+              </div>
+            </Card>
+            <Card padding="p-6" hover={false}>
+              <h3 className="text-lg font-bold mb-4">API</h3>
+              <div className="flex flex-wrap gap-2">
+                {skills.api.map((s) => (
                   <Badge key={s} variant="subtle" className="text-xs">
                     {s}
                   </Badge>
