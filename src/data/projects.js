@@ -17,7 +17,7 @@ export const projects = [
       'RESTful APIs connecting frontend and backend',
     ],
     githubUrl: 'https://github.com/itarikaran/job-track',
-    liveUrl: 'https://job-track.vercel.app',
+    liveUrl: 'https://job-track-ak.vercel.app',
   },
   {
     id: 'task-flow',
