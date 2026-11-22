@@ -38,14 +38,15 @@ export default function About() {
                 transition={{ duration: 0.75, ease: 'easeInOut' }}
                 className="text-gray-600 text-lg leading-relaxed mb-8 max-w-lg"
               >
-                Aspiring Full Stack Developer pursuing a B.E. in Computer
+                Aspiring Java Full Stack Developer pursuing a B.E. in Computer
                 Science and Engineering, with hands-on experience building
-                full-stack web applications using JavaScript, TypeScript,
-                React.js, Next.js, Node.js, Express.js, NestJS, MongoDB and
-                PostgreSQL. Skilled in developing RESTful APIs, implementing
-                authentication and authorization, integrating databases, and
-                building AI-powered application features. Interested in
-                developing scalable, secure and responsive web applications.
+                full-stack web applications using Java, Spring Boot, Spring Data
+                JPA, React.js, and PostgreSQL. Skilled in developing RESTful
+                APIs, implementing backend business logic, integrating relational
+                databases using Hibernate, and building responsive user interfaces.
+                Strong understanding of Object-Oriented Programming, Data Structures
+                and Algorithms, and layered architecture. Interested in developing
+                scalable, secure, and maintainable enterprise applications.
               </motion.p>
               <Button asChild>
                 <a href="/resume.pdf" download>Download Resume</a>
@@ -96,33 +97,16 @@ export default function About() {
           <h2 className="text-3xl font-bold mb-10">Certifications</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              {
-                title: 'Advanced MERN Development',
-                date: 'March 2026',
-                url: 'https://infyspringboard.onwingspan.com/web/certificate',
-              },
-              {
-                title: 'MERN Stack',
-                date: 'February 2026',
-                url: 'https://mylearning.excelr.com/course/globe-in/certificate',
-              },
-              {
-                title: 'Introduction to MERN Stack',
-                date: 'January 2026',
-                url: 'https://simpli-web.app.link/e/Asxannu2Z7b',
-              },
+              { category: 'Infosys Springboard', title: 'Learn Coding with Java' },
+              { category: 'Infosys Springboard', title: 'Spring 5 Basics with Spring Boot' },
+              { category: 'Infosys Springboard', title: 'Spring Data JPA with Boot' },
+              { category: 'Infosys Springboard', title: 'Spring REST' },
+              { category: 'NPTEL', title: 'Programming in Java' },
+              { category: 'NPTEL', title: 'Data Structures and Algorithms using Java' },
             ].map((cert) => (
               <Card key={cert.title} padding="p-6" hover={false}>
                 <h3 className="text-lg font-bold mb-2">{cert.title}</h3>
-                <p className="text-sm text-gray-600 mb-4">{cert.date}</p>
-                <a
-                  href={cert.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm font-medium text-violet-600 hover:text-violet-700 underline"
-                >
-                  View Certificate →
-                </a>
+                <p className="text-sm text-gray-600 mb-4">{cert.category}</p>
               </Card>
             ))}
           </div>

@@ -44,14 +44,14 @@ export default function Home() {
                 transition={{ duration: 0.7, delay: 0.2 }}
                 className="w-full max-w-4xl text-gray-600 text-lg lg:text-xl leading-relaxed"
               >
-                Aspiring Full Stack Developer pursuing a B.E. in Computer
-                Science and Engineering, with hands-on experience building
-                full-stack web applications using JavaScript, TypeScript,
-                React.js, Next.js, Node.js, Express.js, NestJS, MongoDB and
-                PostgreSQL. Skilled in developing RESTful APIs, implementing
-                authentication and authorization, integrating databases, and
-                building AI-powered application features. Interested in
-                developing scalable, secure and responsive web applications.
+                Aspiring Java Full Stack Developer with hands-on experience
+                building full-stack web applications using Java, Spring Boot,
+                React.js, JavaScript, HTML, CSS and PostgreSQL. Skilled in
+                developing RESTful APIs, implementing authentication and
+                authorization, integrating databases using Spring Data JPA and
+                Hibernate, and building responsive web applications. Interested
+                in developing scalable, secure and maintainable enterprise
+                applications.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -90,23 +90,19 @@ export default function Home() {
             <ScrollReveal delay={0.1}>
               <Card padding="p-6" hover={false}>
                 <h3 className="text-lg font-bold mb-2">Languages</h3>
-                <p className="text-gray-600 text-sm">JavaScript · TypeScript</p>
+                <p className="text-gray-600 text-sm">Java · JavaScript</p>
               </Card>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
               <Card padding="p-6" hover={false}>
                 <h3 className="text-lg font-bold mb-2">Frontend</h3>
-                <p className="text-gray-600 text-sm">
-                  React.js · Next.js · Tailwind CSS
-                </p>
+                <p className="text-gray-600 text-sm">HTML, CSS, React.js</p>
               </Card>
             </ScrollReveal>
             <ScrollReveal delay={0.3}>
               <Card padding="p-6" hover={false}>
                 <h3 className="text-lg font-bold mb-2">Backend</h3>
-                <p className="text-gray-600 text-sm">
-                  Node.js · NestJS · Express.js
-                </p>
+                <p className="text-gray-600 text-sm">Springboot</p>
               </Card>
             </ScrollReveal>
           </div>
