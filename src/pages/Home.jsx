@@ -35,7 +35,7 @@ export default function Home() {
                   Ari Karan
                 </h1>
                 <h2 className="text-lg sm:text-xl lg:text-3xl font-semibold tracking-wide text-violet-600">
-                  Full Stack Developer
+                  Java Full Stack Developer
                 </h2>
               </motion.div>
               <motion.p

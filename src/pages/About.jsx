@@ -22,7 +22,7 @@ export default function About() {
             </div>
             <div>
               <div className="flex items-center gap-2 mb-6">
-                <Badge variant="black">Full Stack Developer</Badge>
+                <Badge variant="black">Java Full Stack Developer</Badge>
               </div>
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
